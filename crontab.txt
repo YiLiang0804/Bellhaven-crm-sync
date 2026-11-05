@@ -1,0 +1,3 @@
+# Run the Bellhaven -> CRM sync every day at 06:00 local time; proposals land in data/proposals.json
+# for a reviewer to approve/reject in the Streamlit app. Safe to re-run: decided items are skipped via data/decisions.sqlite.
+0 6 * * * cd /path/to/bellhaven-crm-sync && /usr/bin/python3 run.py >> data/run.log 2>&1
