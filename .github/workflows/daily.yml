@@ -1,7 +1,7 @@
 name: daily-bellhaven-crm-sync
 on:
-  schedule:
-    - cron: "0 11 * * *"   # 06:00 US Eastern, daily
+     # schedule:
+     #   - cron: "0 11 * * *"   # 06:00 US Eastern, daily. Disabled after the assessment window closed (sandbox token deactivated).
   workflow_dispatch:
 jobs:
   sync:
